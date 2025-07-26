@@ -1,0 +1,865 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #000528;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Condiment";
+    src: url(./assets/Condiment-Regular.woff) format('woff') ;
+}
+
+p {
+    font-family: condiment;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*   header tag styles  */
+
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ff1414;
+    background: radial-gradient(circle, rgba(255, 20, 20, 1) 0%, rgb(81, 0, 0) 100%);
+    background-size: cover;
+}
+
+.Ferrari-Sf90 {
+
+    margin-top: 30px;
+    font-size: 9rem;
+    font-family: Condiment;
+    color: #EEFF00;
+
+}
+
+.Ferrari-car {
+
+    width: 1000px;
+    margin-top: -28px;
+
+}
+
+p.description {
+    margin-top: 20px;
+    font-size: 60px;
+    margin-bottom: 100px;
+    color: #F7FF8C;
+    font-family: Condiment;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   main tag styles  */
+
+
+main {
+    width: 100%;
+    height: 1785px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+div.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 60%;
+    height: 100px;
+    background-color: #D1EDFF;
+    margin-top: -50px;
+    border-radius: 15px;
+}
+
+a.under-the-hood,
+a.threeD-view {
+
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Condiment;
+    font-size: 25px;
+    padding: 10px 30px 3px 30px;
+    background-color: #000528;
+    text-decoration: none;
+    color: #D1EDFF;
+    transition-duration: .2s;
+}
+
+a.threeD-view {
+    margin-right: 20px;
+}
+
+a.under-the-hood:hover {
+    transform: translateY(-3px);
+    box-shadow: 2px 2px 10px rgb(0, 2, 58);
+}
+
+a.threeD-view:hover {
+    transform: translateY(-3px);
+    box-shadow: 2px 2px 10px rgb(0, 2, 58);
+}
+
+
+
+
+/*  card styles  */
+
+div.specification {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    width: 1000px;
+    flex-wrap: wrap;
+}
+
+div.card {
+    border-radius: 15px;
+    width: 260px;
+    height: 350px;
+    margin: 25px;
+    background-color: #fff;
+}
+
+div.cover {
+    width: 260px;
+    height: 350px;
+    font-family: Condiment;
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 15px;
+    background-image: linear-gradient(120deg, #e60000bf, #2600ffbd);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease-in-out;
+}
+
+.cover-text {
+    color: #000528;
+    font-family: condiment;
+    text-align: center;
+}
+
+.content-text {
+    font-size: 70px;
+    margin-top: 30px;
+}
+
+.content-text-speed {
+    margin-top: 40px;
+    font-size: 50px;
+}
+
+div.cover:hover {
+
+    background-image: linear-gradient(120deg, #e6000000, #2600ff00);
+    backdrop-filter: blur(0px);
+    font-size: 0px;
+}
+
+div.content-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 90px;
+    border-radius: 15px;
+    background-color: #D1EDFF;
+    font-family: Condiment;
+}
+
+.card-svg {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.card-svg-speed {
+    width: 180px;
+    height: 180px;
+}
+
+
+
+/* 3d view */
+
+div.view-3d-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    width: 100%;
+    height: 1200px;
+    background-color: #D1EDFF;
+}
+
+div.view-3d {
+    display: flex;
+    direction: rtl;
+    width: 1000px;
+    height: 500px;
+    background-color: #000528;
+    border-radius: 15px;
+}
+
+canvas {
+    margin-top: 5px;
+    margin-right: 3px;
+    height: 0%;
+    width: 0%;
+
+}
+
+div.body-color {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 70px;
+    background-color: #ffffff00;
+    border-radius: 15px;
+
+}
+
+div.color-red {
+
+    width: 25px;
+    height: 25px;
+    background-color: #cf0000;
+    border-radius: 50%;
+    margin: 10px;
+    margin-right: 30px;
+    cursor: pointer;
+
+
+}
+
+div.color-red:hover {
+    width: 30px;
+    height: 30px;
+}
+
+div.color-white {
+
+    width: 25px;
+    height: 25px;
+    background-color: #b9b9b9;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+
+
+}
+
+div.color-white:hover {
+    width: 30px;
+    height: 30px;
+}
+
+.color-yello {
+
+    width: 25px;
+    height: 25px;
+    background-color: #c79f19;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+
+
+}
+
+.color-yello:hover {
+    width: 30px;
+    height: 30px;
+}
+
+div.box-container {
+    direction: rtl;
+}
+
+
+
+/*    footer styles  */
+
+
+footer {
+    width: 100%;
+    height: 250px;
+    background-color: #000528;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+
+}
+
+div.logo {
+
+    width: 150px;
+    height: 200px;
+}
+
+img.ferrari-logo {
+    width: 100%;
+    height: 100%;
+
+}
+
+img.ferrari-logo:hover {
+    filter: invert(33%) sepia(100%) saturate(3000) hue-rotate(355deg) brightness(110%) contrast(91%);
+
+}
+
+div.me {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.footer-text-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+a.footer-text {
+    font-size: 30px;
+    color: #d1edffb8;
+    font-family: condiment;
+}
+
+p.footer-text {
+    font-size: 33px;
+    color: #d1edff;
+}
+
+a.footer-text:hover {
+    color: #d1edff;
+}
+
+img.footer-logo {
+    width: 35px;
+    height: 35px;
+    margin: 8px;
+    filter: brightness(0.7);
+}
+
+img.footer-logo-1 {
+    margin: 8px;
+    filter: brightness(0.7);
+}
+
+img.footer-logo:hover,
+img.footer-logo-1:hover {
+
+    filter: brightness(1);
+
+}
+
+div.contact {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.animated {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s cubic-bezier(.23, 1.02, .64, 1);
+}
+
+.animated.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1160px) {
+
+    .Ferrari-Sf90 {
+        font-size: 8rem;
+    }
+
+    img.Ferrari-car {
+        width: 800px;
+
+    }
+
+    p.description {
+        font-size: 50px;
+    }
+
+    div.specification {
+        width: 930px;
+    }
+
+    div.view-3d {
+        width: 800px;
+    }
+
+
+
+    div.menu {
+        height: 70px;
+    }
+
+    a.under-the-hood,
+    a.threeD-view {
+
+        font-size: 23px;
+        padding: 9px 29px 2px 29px;
+
+    }
+
+}
+
+
+@media screen and (max-width:950px) {
+
+
+    div.specification {
+        width: 830px;
+    }
+
+    main {
+        height: 2250px;
+    }
+
+    img.Ferrari-car {
+        width: 700px;
+
+    }
+
+    .Ferrari-Sf90 {
+        font-size: 7rem;
+    }
+
+    p.description {
+        font-size: 40px;
+    }
+
+    div.menu {
+        height: 60px;
+        margin-top: -35px;
+    }
+
+    a.under-the-hood,
+    a.threeD-view {
+        font-size: 21px;
+        padding: 7px 27px 0px 27px;
+    }
+
+    div.view-3d {
+        width: 700px;
+    }
+
+    div.me {
+        width: 250px;
+    }
+
+    div.contact {
+        width: 250px;
+    }
+
+    p.footer-text {
+        font-size: 30px;
+
+    }
+
+    a.footer-text {
+        font-size: 26px;
+    }
+
+    img.footer-logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    img.footer-logo-1 {
+        width: 40px;
+    }
+
+
+
+
+    div.card {
+        width: 220px;
+        height: 320px;
+
+    }
+
+    div.cover {
+        width: 220px;
+        height: 320px;
+        font-size: 50px;
+
+    }
+
+    img.card-svg {
+        width: 120px;
+        height: 120px;
+
+    }
+    
+    img.card-svg-speed {
+        width: 150px;
+        height: 150px;
+
+    }
+
+    p.content-text-speed {
+        font-size: 35px;
+    }
+
+ 
+
+
+}
+
+@media screen and (max-width:870px) {
+
+    
+
+    div.specification {
+        width: 540px;
+    }
+    
+}
+
+
+
+
+@media screen and (max-width:755px) {
+
+    div.view-3d {
+        width: 600px;
+    }
+
+    img.Ferrari-car {
+        width: 550px;
+
+    }
+
+    .Ferrari-Sf90 {
+        font-size: 5rem;
+    }
+
+    p.description {
+        font-size: 35px;
+    }
+
+
+
+    a.under-the-hood,
+    a.threeD-view {
+        font-size: 19px;
+        border-radius: 10px;
+    }
+
+
+    div.me {
+        width: 230px;
+    }
+
+    div.contact {
+        width: 230px;
+    }
+
+    p.footer-text {
+        font-size: 27px;
+    }
+
+    a.footer-text {
+        font-size: 22px;
+    }
+
+    img.footer-logo {
+        width: 27px;
+        height: 27px;
+    }
+
+    img.footer-logo-1 {
+        width: 35px;
+    }
+}
+
+@media screen and (max-width:630px) {
+
+    div.card {
+        width: 220px;
+        height: 310px;
+    }
+
+    div.cover {
+        width: 220px;
+        height: 310px;
+        font-size: 50px;
+    }
+
+    .card-svg {
+        width: 120px;
+        height: 130px;
+        margin-top: 20px;
+    }
+
+    .content-text {
+        font-size: 55px;
+        margin-top: 20px;
+    }
+
+    .card-svg-speed {
+        width: 160px;
+        height: 110px;
+    }
+
+    .content-text-speed {
+        font-size: 40px;
+    }
+
+    div.specification {
+        width: 550px;
+    }
+
+    div.view-3d {
+        width: 500px;
+    }
+
+
+    footer {
+        flex-direction: column;
+        height: 700px;
+    }
+
+    div.logo {
+
+        margin-top: 50px;
+    }
+
+    div.me {
+        order: 1;
+        margin-top: 50px;
+    }
+
+    div.contact {
+        order: 2;
+        margin-top: 20px;
+        height: 150px;
+    }
+
+
+}
+
+@media screen and (max-width:560px) {
+
+    img.Ferrari-car {
+        width: 450px;
+
+    }
+
+    .Ferrari-Sf90 {
+        font-size: 4.7rem;
+        margin-top: 90px;
+    }
+
+    p.description {
+        font-size: 25px;
+    }
+
+    div.menu {
+        width: 70%;
+        height: 50px;
+        margin-top: -31px;
+    }
+
+    a.under-the-hood,
+    a.threeD-view {
+        font-size: 18px;
+    }
+
+    div.specification {
+        width: 280px;
+    }
+
+    main {
+        height: 3200px;
+    }
+
+    div.view-3d {
+        width: 450px;
+    }
+
+
+}
+
+@media screen and (max-width:480px) {
+
+    img.Ferrari-car {
+        width: 450px;
+        margin-top: -2px;
+    }
+
+    .Ferrari-Sf90 {
+        font-size: 3.4rem;
+        margin-top: 90px;
+    }
+
+    p.description {
+        font-size: 23px;
+    }
+
+    div.menu {
+        width: 65%;
+        height: 60px;
+        margin-top: -38px;
+        border-radius: 10px;
+    }
+
+    a.under-the-hood,
+    a.threeD-view {
+        font-size: 17px;
+    }
+
+    div.view-3d {
+        width: 400px;
+    }
+
+}
+
+@media screen and (max-width:470px) {
+
+    img.Ferrari-car {
+        width: 400px;
+    }
+
+    div.menu {
+        width: 70%;
+    }
+
+    a.under-the-hood,
+    a.threeD-view {
+        padding: 7px 27px 1px 19px;
+    }
+
+    div.view-3d {
+        width: 360px;
+    }
+
+}
+
+
+@media screen and (max-width:404px) {
+
+    img.Ferrari-car {
+        width: 320px;
+    }
+
+
+    .Ferrari-Sf90 {
+        font-size: 3rem;
+        margin-top: 90px;
+    }
+
+    div.menu {
+        height: 50px;
+    }
+
+    a.under-the-hood,
+    a.threeD-view {
+        font-size: 16px;
+    }
+
+    div.view-3d {
+        width: 330px;
+    }
+}
+
+
+@media screen and (max-width:370px) {
+
+    div.menu {
+        width: 80%;
+    }
+    div.view-3d {
+        width: 315px;
+    }
+
+
+}

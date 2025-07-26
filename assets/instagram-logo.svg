@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="837" height="797" viewBox="0 0 837 797">
+  <g id="instagram-logo" transform="translate(-1470 -2040)">
+    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(1540 2110)" fill="rgba(255,255,255,0)" stroke="#d1edff" stroke-linecap="round" stroke-linejoin="round" stroke-width="70">
+      <rect width="697" height="657" rx="168" stroke="none"/>
+      <rect x="-35" y="-35" width="767" height="727" rx="203" fill="none"/>
+    </g>
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="48.5" cy="48.5" r="48.5" transform="translate(2058 2155)" fill="#d1edff"/>
+    <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(1671 2221)" fill="none" stroke="#d1edff" stroke-width="75">
+      <circle cx="217.5" cy="217.5" r="217.5" stroke="none"/>
+      <circle cx="217.5" cy="217.5" r="180" fill="none"/>
+    </g>
+  </g>
+</svg>

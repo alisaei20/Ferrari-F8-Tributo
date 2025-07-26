@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./assets/ top logo.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Ferrari F8 Tributo </title>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "./vender/three.module.js"
+        }
+      }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="Ferrari-Sf90 animated">Ferrari F8 Tributo </h1>
+        <img class="Ferrari-car animated" src="./assets/Ferrari-F8-Tributo.png" alt="Ferrari">
+        <p class="description animated">The ultimate beauty and elegance</p>
+    </header>
+
+    <main>
+        <div class="menu">
+            <a class="threeD-view" href="#">3D view</a>
+            <a class="under-the-hood" href="#">under the hood</a>
+        </div>
+        <div class="specification">
+
+
+            <div class="card">
+                <div class="cover">
+                    <p class="cover-text">Engine</p>
+                </div>
+                <div class="content-card">
+                    <img class="card-svg" src="./assets/engine.svg" alt="engine">
+                    <p class="content-text-speed">V8 Turbo</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cover">
+                    <p class="cover-text">Power</p>
+                </div>
+                <div class="content-card">
+                    <img class="card-svg" src="./assets/Specific-Output.svg" alt="engine">
+                    <p class="content-text-speed">720 hp</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cover">
+                    <p class="cover-text">Speed</p>
+                </div>
+                <div class="content-card">
+                    <img class="card-svg-speed" src="./assets/Speed.svg" alt="spped">
+                    <p class="content-text-speed">340 km/h</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cover">
+                    <p class="cover-text">0-100</p>
+                </div>
+                <div class="content-card">
+                    <img class="card-svg" src="./assets/0-100.svg" alt="0-100">
+                    <p class="content-text-speed">2.9 sec</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cover">
+                    <p class="cover-text">Mass</p>
+                </div>
+                <div class="content-card">
+                    <img class="card-svg" src="./assets/mass.svg" alt="engine">
+                    <p class="content-text-speed">1330 kg</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cover">
+                    <p class="cover-text">Gearbox</p>
+                </div>
+                <div class="content-card">
+                    <img class="card-svg" src="./assets/gearbox.svg" alt="engine">
+                    <p class="content-text-speed">semi auto</p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+        <div class="view-3d-container">
+
+
+            <div class="box-container">
+
+
+
+                <div class="view-3d">
+                    <canvas id="canvas"></canvas>
+                    <div class="body-color" style="position: absolute; ">
+
+
+                        <div class="color-red" data-color="#cf0000"></div>
+                        <div class="color-yello" data-color="#dbaf1f"></div>
+                        <div class="color-white" data-color="#b9b9b9"></div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </main>
+
+
+
+    <footer>
+
+
+        <div class="me">
+            <p class="footer-text">About Ferrari</p>
+            <div class="footer-text-container">
+                <a class="footer-text" target="_blank" href="https://www.ferrari.com/en-EN/history">History</a>
+                <a class="footer-text" target="_blank" href="https://www.ferrari.com/en-EN/media-centre">media
+                    center</a>
+                <a class="footer-text" target="_blank" href="https://www.ferrari.com/en-EN/news">news</a>
+            </div>
+        </div>
+
+
+        <div class="logo"><a href="https://www.ferrari.com/en-EN" target="_blank"><img class="ferrari-logo"
+                    src="./assets/ferrari-logo.svg" alt="logo"></a></div>
+
+
+        <div class="contact">
+
+            <p class="footer-text">Contact us</p>
+
+            <div class="logo-container">
+                <a href="https://www.instagram.com/ferrari" target="_blank"> <img class="footer-logo"
+                        src="./assets/instagram-logo.svg" alt="instagram"> </a>
+                <a href="https://www.ferrari.com/en-EN" target="_blank"> <img class="footer-logo"
+                        src="./assets/website-logo.svg" alt="website"> </a>
+                <a href="https://www.linkedin.com/company/ferrari" target="_blank"> <img class="footer-logo"
+                        src="./assets/linkedin.svg" alt="linked in"> </a>
+                <a href="https://www.youtube.com/user/ferrariworld" target="_blank"> <img class="footer-logo-1"
+                        src="./assets/youtube.svg" alt="youtube"> </a>
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </footer>
+
+
+
+
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
