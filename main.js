@@ -1,5 +1,5 @@
 
-import * as THREE from './vender/three.module.js';
+import * as THREE from 'three';
 import { GLTFLoader } from './vender/GLTFLoader.js';
 import { OrbitControls } from './vender/OrbitControls.js';
 
